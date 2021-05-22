@@ -1,4 +1,19 @@
 
+$(".miBoton1").on("click touchstart", function () {
+  $("#sliderInstagram").show();
+  //$("#botonCerrar").show();
+  $(".sliderPrincipal").hide();
+  $(".contenidoBotonesCirculares").hide();
+});
+
+
+
+
+
+
+
+
+
 
 // intervalo de tiempo
 $(".carousel-item").attr("data-bs-interval", "1000")
@@ -10,22 +25,7 @@ $('#sliderInstagram').hide();
 //$('#botonCerrar').hide();
 
 
-$(".miBoton").on("click touchstart", function () {
- 
-  //$('.transparente').css({ 'opacity' : 0.3 });
-  //$('.ocultar').hide();
-  
- 
-  //$('.ocultar').css('background', 'black' );
-  
-  $("#sliderInstagram").show();
-  $("#botonCerrar").show();
-  $(".ocultar").hide();
- //$(".fullFondoNegro").css("background-color", "black");
-  
-  //$("body").css("background","#000")
 
-});
 
 
 

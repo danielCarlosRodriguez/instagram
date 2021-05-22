@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+	xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+>
+	<head>
+		<vtex:template id="fizz-head" />
+	</head>
+
+	<body>
+		<div style="display:none">
+			<vtex.cmc:welcomeMessage />
+			<vtex.cmc:departmentNavigator />
+			<vtex.cmc:customMenu />
+			<vtex.cmc:customFooterLinks />
+			<vtex.cmc:customFooterCards />
+			<vtex.cmc:specialCollectionMaxStock />
+		</div>
+
+
+		<main id="home-root"></main>
+		<section class="placeholders" hidden="hidden">
+			<div id="main-banner">
+				<vtex:contentPlaceHolder id="main-banner" />
+			</div>
+
+			<div id="main-banner-mobile">
+				<vtex:contentPlaceHolder id="main-banner-mobile" />
+			</div>
+		
+
+			<div id="instagram">
+				<vtex:contentPlaceHolder id="instagram" />
+			</div>
+			
+
+
+		</section>
+		<vtex:template id="fizz-scripts" />
+	<script type="text/javascript" src="/files/fizz-home.js"></script></body>
+</html>

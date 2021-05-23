@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+>
+  <!-- carga de bootstrap 5 -->
+  <link href="/files/bootstrap-instagram.min.css" rel="stylesheet" />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="files/instagram.css" />
+
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sliderPrincipal">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://discogdu.vteximg.com.br/arquivos/devoto1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://discogdu.vteximg.com.br/arquivos/devoto2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://discogdu.vteximg.com.br/arquivos/devoto3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://discogdu.vteximg.com.br/arquivos/devoto4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- slider instagram -->
+    <div id="sliderInstagram" style="background-color: black; height: 100%">
+      hola mundo
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <!-- boton cerrar -->
+          <button
+            id="botonCerrar"
+            type="button"
+            class="btn-close btn-close-white"
+            aria-label="Close"
+          ></button>
+          <!-- fin boton cerrar -->
+
+
+
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+
+
+            <<ol class="carousel-indicators indicador">
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+              ></li>
+              <li
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+              ></li>
+            </ol>
+
+            <div class="carousel-inner" >
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img
+                  src="arquivos/01.jpg"
+                  class="d-block w-100 rounded-3"
+                  alt="..."
+                  height="100%"
+                />
+              </div>
+
+              <div class="carousel-item" data-bs-interval="1000">
+                <img
+                  src="arquivos/02.jpg"
+                  class="d-block w-100 rounded-3"
+                  alt="..."
+                  height="100%"
+                />
+              </div>
+
+              <div class="carousel-item" data-bs-interval="1000">
+                <img
+                  src="arquivos/03.jpg"
+                  class="d-block w-100 rounded-3"
+                  alt="..."
+                    height="100%"
+                />
+              </div>
+            </div>
+
+
+
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin slider instagram -->
+
+    <div class="container contenidoBotonesCirculares">
+      <div class="row">
+        <div class="col">
+          <!-- botones circulares -->
+          <div
+            class="container mt-3 transparente ocultar"
+            id="tiraBotonesInstagram"
+          >
+            <div class="row text-center">
+              <div class="col-md-12 botonesCirculares">
+                <!-- <vtex:contentPlaceHolder id="botonesInstagramPlaceholder" /> -->
+
+                <div class="botonCircular">
+                  <img
+                    type="button"
+                    src="arquivos/b01.jpg"
+                    class="rounded-circle miBoton1 dobleBorde"
+                    alt="..."
+                  />
+                  <h6 class="hashtag">#categoria1</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin botones circulares -->
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- carga de jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- production version, optimized for size and speed -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <!-- js propio-->
+  <script src="files/btn-instagram.js"></script>
+</html>

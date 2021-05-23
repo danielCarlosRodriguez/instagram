@@ -1,7 +1,51 @@
 
+// intervalo de tiempo
+$(".carousel-item").attr("data-bs-interval", "1000");
+
+
+
+//ocultar imagenes al abrir y apretar boton cerrar
+
+$("#sliderInstagram1").hide();
+$("#sliderInstagram2").hide();
+$("#sliderInstagram3").hide();
+$("#sliderInstagram4").hide();
+$("#sliderInstagram5").hide();
+$(".botonCerrar").hide();
+
+
+//botón categorías
 $(".miBoton1").on("click touchstart", function () {
-  $("#sliderInstagram").show();
-  //$("#botonCerrar").show();
+  $("#sliderInstagram1").show();
+  $(".botonCerrar").show();
+  $(".sliderPrincipal").hide();
+  $(".contenidoBotonesCirculares").hide();
+});
+
+$(".miBoton2").on("click touchstart", function () {
+  $("#sliderInstagram2").show();
+  $(".botonCerrar").show();
+  $(".sliderPrincipal").hide();
+  $(".contenidoBotonesCirculares").hide();
+});
+//botón categorías
+$(".miBoton3").on("click touchstart", function () {
+  $("#sliderInstagram3").show();
+  $(".botonCerrar").show();
+  $(".sliderPrincipal").hide();
+  $(".contenidoBotonesCirculares").hide();
+});
+
+$(".miBoton4").on("click touchstart", function () {
+  $("#sliderInstagram4").show();
+  $(".botonCerrar").show();
+  $(".sliderPrincipal").hide();
+  $(".contenidoBotonesCirculares").hide();
+});
+//botón categorías
+$(".miBoton5").on("click touchstart", function () {
+  $("#sliderInstagram5").show();
+  $(".botonCerrar").show();
   $(".sliderPrincipal").hide();
   $(".contenidoBotonesCirculares").hide();
 });
@@ -10,47 +54,17 @@ $(".miBoton1").on("click touchstart", function () {
 
 
 
-
-
-
-
-
-// intervalo de tiempo
-$(".carousel-item").attr("data-bs-interval", "1000")
-
-
-//ocultar imagenes al abrir y apretar boton cerrar
-$('#sliderInstagram').hide();
-//$(".fullFondoNegro").css("background-color", "white");
-//$('#botonCerrar').hide();
-
-
-
-
-
-
 //botón Cerrar
-$("#botonCerrar").on("click touchstart", function () {
-  
-   $('.transparente').css({ 'opacity' : 1 });
-   $('.ocultar').show();
-   $('#sliderInstagram').hide();
-   $('#botonCerrar').hide();
-   //$('body').css('background', 'white');
-  //$(".fullFondoNegro").hide();
-   
-   console.log("cierro slider");
-  
- });
+$(".botonCerrar").on("click touchstart", function () {
+  $(".transparente").css({ opacity: 1 });
+  $(".sliderPrincipal").show();
+  $(".contenidoBotonesCirculares").show();
+  $("#sliderInstagram1").hide();
+  $("#sliderInstagram2").hide();
+  $("#sliderInstagram3").hide();
+  $("#sliderInstagram4").hide();
+  $("#sliderInstagram5").hide();
+  $(".botonCerrar").hide();
 
-
- //botón Cerrar
-// $("#sliderInstagram").on("click touchstart", function () {
-//   $(".transparente").css({ opacity: 1 });
-//   $(".ocultar").show();
-//   $("#sliderInstagram").hide();
-//   $("#botonCerrar").hide();
-//   //$("body").css("background", "white");
-
-//   console.log("cierro slider");
-// });
+  console.log("cierro slider");
+});
